@@ -1,0 +1,10 @@
+.basket {
+
+    position : fixed;
+    top : 200px;
+    background-color: aquamarine;
+    padding: 20px;
+    width: 100%;
+    z-index: 100;
+
+}

@@ -1,0 +1,122 @@
+
+.navigation {
+
+    --navbar-height : 100px;
+    --navbar-spacing : 20px;
+
+    --background-color: #000;
+    --text-color: #fff;
+
+    --pane-background-color: red;
+    --pane-text-color: #fff;
+
+
+    --navbar-link-color : #fff;
+    --navbar-link-color-hover : #000;
+
+    width : 100%;
+    height : 100px;
+    
+    color : var(--text-color);
+    
+    
+}
+
+/*
+
+    Navbar
+
+*/
+.navigation .navbar{ 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height : var(--navbar-height);
+    position: relative;
+    background-color : var(--background-color);
+    z-index: 1;
+    
+}
+
+.navigation .navbar .logo{ 
+
+    height : 60%;
+    margin-left : var(--navbar-spacing);
+    
+}
+
+.navigation .navbar .actions{ 
+
+
+    margin-right : var(--navbar-spacing);
+    display: flex;
+    
+}
+
+/*
+
+    NavPane
+
+*/
+
+.navigation .navpane{ 
+
+    background-color: antiquewhite;
+    background-color : var(--pane-background-color);
+    color : var(--pane-text-color);
+    padding: var(--navbar-spacing);
+    left : -100%;
+    position : relative;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+}
+
+.navigation.active .navpane{ 
+
+    left : 0;
+
+
+}
+
+.navigation .navpane .lists { 
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+}
+
+.navigation .navpane .lists a{ 
+
+    color : var(--navbar-link-color);
+
+
+}
+
+.navigation .navpane .lists a:hover{ 
+
+    color : var(--navbar-link-color-hover);
+
+}
+
+.navigation ul,
+.navigationul li,
+.navigation ul ul li {
+   margin:0;
+   padding: 0;
+   text-indent: 0;
+   list-style-type: none;
+}
+
+
+@media (min-width: 460px) {
+
+    .navigation .navpane .lists { 
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,12 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: underline;
+}

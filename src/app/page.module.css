@@ -1,0 +1,10 @@
+.main {
+  /* min-height: 100vh; */
+}
+
+/* Over 320 */
+@media (min-width: 320px) {
+  .main {
+    /* background-color : red */
+  } 
+}
