@@ -7,6 +7,8 @@ export async function GET(request) {
 
     let id = searchParams.get('id');
 
+    console.log('products', products)
+
     let product = products.find( (product) => product.id ==  id);
 
     if(product === undefined) {
